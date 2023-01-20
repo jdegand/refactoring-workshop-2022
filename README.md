@@ -1,6 +1,6 @@
 # Refactoring Workshop 2022
 
-I don't know if this [repo](https://github.com/gauthierm/refactoring-workshop-2022) was intended to be a challenge for people to complete or more of a reference to a guided exercise but I saw it more as an interesting challenge to try and complete. I have done a lot of revisions of various functions and components. I have completed most of the requirements. Some ambiguity in the directions has changed my implementation in some slight ways. Various implementation design choices are listed in the Thoughts section. The screenshot below is what I got when I first got the application working and my implementation gives the same output.
+This is my solution to this [repo](https://github.com/gauthierm/refactoring-workshop-2022). I have done a lot of revisions of various functions and components. Some ambiguity in the directions has changed my implementation in some slight ways. Various implementation design choices are listed in the [Thoughts](#thoughts) section. The screenshot is what you get when you first run the application and my implementation gives the same output.
 
 ## Screenshot
 
@@ -202,12 +202,13 @@ The React code in `components` has similar issues. Can it be cleaned up in the s
 - No, result was caused by `groupedMembers.facebook.push(contributor)` in contributors.forEach function.  Need to comment out when testing getGroupedMemeberData if having groupedMembers be the result of call to getContributorsByOrganization
 - If you were to use getTotalContribututionsByOrganization inside getGroupedMemberData, you would need to comment out the pushes to totals in the forEach.
 - getTotalContribututionsByOrganization is spelled wrong - if you correct spelling, tsconfig.json gives an error - so I guess it's best to leave it as is and note it here - tslint is looking for test files with both correct and incorrect spellings - so I duplicated file in tests folder - bizarre error and have not looked further into the issue
+- getGroupedMemberData still mutates data - I thought about refactoring it but it is not used anymore in the application.   
 - getPageContent needs a test ?
 - Stats.tsx and Row.tsx are testable - need to install react-test-renderer or react-testing-library - can do a basic snapshot test since component should not change 
 - forEach breaks typescript - since you can mutate shape of data - typescript will look for properties that no longer exist ie forEach call in getContributors
 - Directions make it seem like converting to declarative approach is for performance or maintainability but it is necessary for the typescript - you can't mutate data.  Typescript will throw errors and the app will not work.  
 - Member interface is same as contributor except it needs a contributions property
-- Never used Zod and didn't know much about it 
+- Never used Zod before this project - Zod saves on code duplication with z.infer and makes declaring types easy  
 
 ## Useful Resources
 
