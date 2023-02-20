@@ -223,11 +223,11 @@ The React code in `components` has similar issues. Can it be cleaned up in the s
 - [Stack Overflow](https://stackoverflow.com/questions/15748656/javascript-reduce-on-object) - reduce on object
 - [Stack Overflow](https://stackoverflow.com/questions/50249604/create-map-to-reduce-javascript) - create map to reduce
 - [Stack Overflow](https://stackoverflow.com/questions/64188099/how-to-reduce-array-of-objects-into-one-object) - reduce an array of objects into one object
-- [Stack Overflow](https://stackoverflow.com/questions/14810506/map-function-for-objects-instead-of-arrays)
+- [Stack Overflow](https://stackoverflow.com/questions/14810506/map-function-for-objects-instead-of-arrays) - map function for objects instead of arrays
 - [Stack Overflow](https://stackoverflow.com/questions/8837454/sort-array-of-objects-by-single-key-with-date-value) - sort is not immutable?
 - [YouTube](https://www.youtube.com/watch?v=laP1gML83DA) - Write better JavaScript code | JS Best Practices (Promise.all/Destructuring)
 - [UUID generator](https://www.uuidgenerator.net/dev-corner/typescript) - uuid with typescript
 - [Blog](https://dpericich.medium.com/how-to-build-multi-type-multidimensional-arrays-in-typescript-a9550c9a688e) - type multidimiensional arrays
-- [Stack Overflow](https://stackoverflow.com/questions/71054132/how-to-set-a-type-of-an-array-in-an-anonymous-object)
+- [Stack Overflow](https://stackoverflow.com/questions/71054132/how-to-set-a-type-of-an-array-in-an-anonymous-object) - set a type of an array in an anonymous object
 - [Stack Overflow](https://stackoverflow.com/questions/48240449/type-is-not-assignable-to-type-intrinsicattributes-intrinsicclassattribu) - type is not assignable to type intrinsic attributes
 - [YouTube](https://www.youtube.com/watch?v=g0MSer7WxVc) - Multiple Generic Parameters in TypeScript
